@@ -7,7 +7,7 @@ interface Props {
 
 function ProjectSingle({ project }: Props) {
   return (
-    <div className="card glass bg-gray-900/50 shadow-xl w-[350px] lg:w-[450px] max-h-[700px]">
+    <div className="card bg-gray-900/50 shadow-xl w-[350px] lg:w-[450px] max-h-[700px]">
       {/* <img src={project.image[0]} alt="Movie" className="w-[500px]" /> */}
       <div className="carousel w-full rounded-lg">
         {project.image.map((image, key) => (
@@ -24,11 +24,11 @@ function ProjectSingle({ project }: Props) {
         <h2 className="card-title">{project.name}</h2>
         <p>{project.description}</p>
         <div className="card-actions justify-end mt-4">
-          <a href={project.liveUrl} target="_blank" className="btn btn-primary flex gap-2">
+          <a href={project.liveUrl} target="_blank" className="btn flex gap-2">
             <IconAirBalloon />
             Live Demo
           </a>
-          <a href={project.repoUrl} target="_blank" className="btn btn-primary flex gap-2">
+          <a href={project.repoUrl} target="_blank" className="btn flex gap-2">
             <IconBrandGithub />
             Github Repository
           </a>
