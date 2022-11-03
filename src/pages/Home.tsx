@@ -17,7 +17,11 @@ function Home() {
         <Link to="/projects">
           <Button icon={<IconPointer />}>See Projects</Button>
         </Link>
-        <Button icon={<IconFile />}>Download Resume</Button>
+        <Button icon={<IconFile />}>
+          <a download="Ayberk-Resume.pdf" href="/resume.pdf">
+            Download Resume
+          </a>
+        </Button>
       </div>
     </div>
   )
